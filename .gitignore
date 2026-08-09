@@ -1,0 +1,4 @@
+node_modules/
+dist/
+dokploy-openapi.json
+deploy_dokploy.py

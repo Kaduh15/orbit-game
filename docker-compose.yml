@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  orbit-game:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
+    restart: unless-stopped

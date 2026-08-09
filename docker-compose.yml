@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
   orbit-game:
-    image: nginx:alpine
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "80:80"
-    volumes:
-      - ./dist:/usr/share/nginx/html:ro
     restart: unless-stopped
